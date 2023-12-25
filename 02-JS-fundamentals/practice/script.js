@@ -76,3 +76,47 @@ const vehicle = function (fourWheeler, twoWheeler){
 console.log(vehicle('mercedese', 'bullet')); */
 
 
+/* const newArr = ['pinki', 'jha', 'shailesh', 'thakur'];
+const newArr1 = ['pinki', 'jha', 'shailesh', 'thakur','love'];
+console.log(newArr);
+console.log(newArr1);
+newArr.length; */
+
+//array with for loop
+
+/* const cityName = ['mumbai', 'delhi', 'bagnlore', 'pune', 'goa', 'mysore'];
+
+console.log(cityName); */
+
+
+
+//using forloop
+
+// const familyMemebers = ['papa', 'mummy', 'hubby', 'sister', 'childrens', 'in-laws' ];
+
+/* for(let i = 0; i < familyMemebers.length; i++){
+    console.log(familyMemebers[i]);
+} */
+
+//for of loop
+
+/* for ( mName of familyMemebers){
+    console.log(mName.toLowerCase());
+}
+
+
+
+const cityName = ['mumbai', 'delhi', 'bagnlore', 'pune', 'goa', 'mysore'];
+for ( city of cityName)
+console.log(city.toUpperCase()); */
+
+let prices = [250, 400, 600, 700, 800, 1000];
+
+let i = 0;
+for( let val of prices){
+    console.log(`value at index ${i} = price before offer : ${val}`);
+    let offer = val / 10;
+    prices[i] = prices[i] - offer;
+    console.log(`value at index ${i} = price after offer : ${prices[i]}`)
+    i++;
+}
