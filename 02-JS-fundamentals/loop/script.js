@@ -26,9 +26,22 @@
 
 // Odd Numbers: Write a for loop that prints all odd numbers between 30 and 50.
 
-for ( let num = 30; num <= 50; num++){
+/* for ( let num = 30; num <= 50; num++){
 
     if ( num % 2 != 0 ){
         console.log(`Odd numbers from 30 to 50: ${num}`)
     }
+} */
+
+
+// Sum of Numbers: Write a for loop to calculate the sum of all numbers from 1 to 50.
+
+let sum = 0;
+for ( let num = 1; num <= 50; num++){
+   
+    sum = sum + num;
+
 }
+
+console.log(`sum of 1 to 50 numbers are: ${sum}`);
+
