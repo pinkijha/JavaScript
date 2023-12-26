@@ -36,12 +36,20 @@
 
 // Sum of Numbers: Write a for loop to calculate the sum of all numbers from 1 to 50.
 
-let sum = 0;
-for ( let num = 1; num <= 50; num++){
-   
+/* let sum = 0;
+for ( let num = 1; num <= 50; num++){   
     sum = sum + num;
+}
+console.log(`sum of 1 to 50 numbers are: ${sum}`); */
 
+
+// Array Iteration: Given an array [10, 20, 30, 40, 50], use a for loop to print each element in the array.
+
+const arry = [10, 20, 30, 40, 50];
+
+for (let num = 0; num < arry.length; num++){
+    
+console.log(`index of ${num} : ${arry[num]}`);
 }
 
-console.log(`sum of 1 to 50 numbers are: ${sum}`);
 
