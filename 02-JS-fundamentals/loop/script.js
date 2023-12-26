@@ -16,8 +16,19 @@
 
 // Even Numbers: Write a for loop that prints all even numbers between 1 and 20.
 
-for (let even = 2; even <=20; even++){
+/* for (let even = 2; even <=20; even++){
     if (even % 2 == 0){
         console.log(`even number from 2 to 20:  ${even}`);
+    }
+} */
+
+
+
+// Odd Numbers: Write a for loop that prints all odd numbers between 30 and 50.
+
+for ( let num = 30; num <= 50; num++){
+
+    if ( num % 2 != 0 ){
+        console.log(`Odd numbers from 30 to 50: ${num}`)
     }
 }
