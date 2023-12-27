@@ -58,7 +58,7 @@ console.log(`index of ${num} : ${arry[num]}`);
 // 2 4 6
 // 3 6 9
 
-for ( let i=1 ; i<=5; i++ ){
+/* for ( let i=1 ; i<=5; i++ ){
     let line = ' '; 
     for ( j=1; j<=4; j++){
         let result = i*j;
@@ -68,7 +68,7 @@ for ( let i=1 ; i<=5; i++ ){
     }
     console.log(line); 
     
-}
+} */
 
 
 /* // Start pattern
@@ -83,3 +83,28 @@ for ( let i=1 ; i<=6; i++){
 } */
 
 
+//Object Iteration: Given an object { name: 'John', age: 30, city: 'New York' }, use a for loop to print each key-value pair.
+
+// using for of loop
+const empData = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+}
+for (let [key, value] of Object.entries(empData)){
+    console.log(`${key}: ${value}`);
+}
+
+
+// using for in loop
+const empDetails = {
+    name: 'John',
+    age: 30,
+    city: 'New York'
+}
+
+for (let key in empDetails) {
+    if (empDetails.hasOwnProperty(key)) { // Check if the property belongs directly to the object
+        console.log(`${key}: ${empDetails[key]}`);
+    }
+}
