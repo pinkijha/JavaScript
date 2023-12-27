@@ -45,11 +45,41 @@ console.log(`sum of 1 to 50 numbers are: ${sum}`); */
 
 // Array Iteration: Given an array [10, 20, 30, 40, 50], use a for loop to print each element in the array.
 
-const arry = [10, 20, 30, 40, 50];
+/* const arry = [10, 20, 30, 40, 50];
 
 for (let num = 0; num < arry.length; num++){
     
 console.log(`index of ${num} : ${arry[num]}`);
+} */
+
+
+// Nested Loop: Create a multiplication table using nested for loops. For example, a 3x3 multiplication table would look like:
+// 1 2 3
+// 2 4 6
+// 3 6 9
+
+/* for ( let i=1 ; i<=5; i++ ){
+    let line = ' '; 
+    for ( j=1; j<=4; j++){
+        let result = i*j;
+        // console.log(result);
+        line += result + ' ';
+
+    }
+    console.log(line); 
+    
+} */
+
+
+// Start pattern
+
+for ( let i=1 ; i<=6; i++){
+    let line = '';
+    for (let j=1; j<=i; j++){
+        let star = '*';
+        line += star + '';
+    }
+    console.log(line);
 }
 
 
