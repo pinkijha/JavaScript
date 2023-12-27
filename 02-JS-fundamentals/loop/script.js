@@ -58,7 +58,7 @@ console.log(`index of ${num} : ${arry[num]}`);
 // 2 4 6
 // 3 6 9
 
-/* for ( let i=1 ; i<=5; i++ ){
+for ( let i=1 ; i<=5; i++ ){
     let line = ' '; 
     for ( j=1; j<=4; j++){
         let result = i*j;
@@ -68,10 +68,10 @@ console.log(`index of ${num} : ${arry[num]}`);
     }
     console.log(line); 
     
-} */
+}
 
 
-// Start pattern
+/* // Start pattern
 
 for ( let i=1 ; i<=6; i++){
     let line = '';
@@ -80,6 +80,6 @@ for ( let i=1 ; i<=6; i++){
         line += star + '';
     }
     console.log(line);
-}
+} */
 
 
