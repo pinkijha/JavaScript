@@ -85,7 +85,7 @@ for ( let i=1 ; i<=6; i++){
 
 //Object Iteration: Given an object { name: 'John', age: 30, city: 'New York' }, use a for loop to print each key-value pair.
 
-// using for of loop
+/* // using for of loop
 const empData = {
     name: 'John',
     age: 30,
@@ -93,10 +93,10 @@ const empData = {
 }
 for (let [key, value] of Object.entries(empData)){
     console.log(`${key}: ${value}`);
-}
+} */
 
 
-// using for in loop
+/* // using for in loop
 const empDetails = {
     name: 'John',
     age: 30,
@@ -107,4 +107,19 @@ for (let key in empDetails) {
     if (empDetails.hasOwnProperty(key)) { // Check if the property belongs directly to the object
         console.log(`${key}: ${empDetails[key]}`);
     }
+} */
+
+// Fibonacci Series: Write a for loop to generate the first 10 numbers in the Fibonacci sequence.
+
+let num1 = 0;
+let num2 = 1;
+let nextNum;
+
+console.log(num1);
+for (let i = 1; i<=10; i++){
+    console.log(num2);
+    nextNum = num1 + num2;
+    num1 = num2;
+    num2 = nextNum;
+
 }
