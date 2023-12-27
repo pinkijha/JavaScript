@@ -111,7 +111,7 @@ for (let key in empDetails) {
 
 // Fibonacci Series: Write a for loop to generate the first 10 numbers in the Fibonacci sequence.
 
-let num1 = 0;
+/* let num1 = 0;
 let num2 = 1;
 let nextNum;
 
@@ -121,5 +121,6 @@ for (let i = 1; i<=10; i++){
     nextNum = num1 + num2;
     num1 = num2;
     num2 = nextNum;
+} */
 
-}
+

@@ -110,7 +110,9 @@ const cityName = ['mumbai', 'delhi', 'bagnlore', 'pune', 'goa', 'mysore'];
 for ( city of cityName)
 console.log(city.toUpperCase()); */
 
-let prices = [250, 400, 600, 700, 800, 1000];
+// using for off loop
+
+/* let prices = [250, 400, 600, 700, 800, 1000];
 
 let i = 0;
 for( let val of prices){
@@ -119,4 +121,14 @@ for( let val of prices){
     prices[i] = prices[i] - offer;
     console.log(`value at index ${i} = price after offer : ${prices[i]}`)
     i++;
+} */
+
+// using for loop
+let prices = [250, 400, 600, 700, 800, 1000];
+console.log(`price before offer : ${prices}`);
+for (let i=0; i<prices.length; i++){
+    let offer = prices[i] / 10;
+    prices[i] = prices[i] - offer;
 }
+
+console.log(`price after offer : ${prices}`);
