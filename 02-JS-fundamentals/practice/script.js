@@ -124,11 +124,54 @@ for( let val of prices){
 } */
 
 // using for loop
-let prices = [250, 400, 600, 700, 800, 1000];
+/* let prices = [250, 400, 600, 700, 800, 1000];
 console.log(`price before offer : ${prices}`);
 for (let i=0; i<prices.length; i++){
     let offer = prices[i] / 10;
     prices[i] = prices[i] - offer;
 }
 
-console.log(`price after offer : ${prices}`);
+console.log(`price after offer : ${prices}`); */
+
+/* const array = [1, 2, 3];
+array.concat(4, 5, 6);
+const result = array;
+console.log(result); */
+
+/* const result = Math.sqrt(4);
+console.log(result); */
+
+/* const array =[1, 2, 3];
+debugger;
+const copy = array.reverse();
+const result = copy === array;
+console.log(result); */
+
+/* const array = [1, 4, 9];
+const result = 0 in array;
+console.log(result); */
+
+/* const a = [1, 2, 3, 4, 5];
+const result = a.shift() - a.pop();
+console.log(result); */
+
+/* let value = 2009;
+if (value > 1){
+    let value = 262;
+}
+const result = value;
+console.log(result); */
+
+/* const resulr = 1.2e3;
+console.log(resulr); */
+
+/* const value = 2009;
+const result = eval("value + value");
+console.log(result); */
+
+/* const check = (value) => value === 5;
+const result = [1, 2, 3].some(check);
+console.log(result); */
+
+
+
