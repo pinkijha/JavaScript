@@ -56,7 +56,7 @@ let output = arry.map(binary);
 
 //filter aaray function (higher order function)
 
-const arrys = [1, 2, 3, 4, 5, 6];
+let arrys = [1, 2, 3, 4, 5, 6];
  function odd(){
      for (let i = 0; i<arrys.length; i++){
         if (i%2 !== 0){
@@ -84,11 +84,44 @@ const arrys = [1, 2, 3, 4, 5, 6];
  console.log(outputs); */
 
  // another example number greater
-let  outputs = arrys.filter((x) => x > 3);
-console.log(outputs);
+/* let  outputs = arrys.filter((x) => x > 3);
+console.log(outputs); */
 
 /*  function isGreater(x){
     return x > 4;
  }
  let outputs = arrys.filter(isGreater);
  console.log(outputs); */
+
+
+ // reduce aaray function (higher order function)
+
+ //normal way to do summ of array
+ arrys = [1, 2, 3, 4, 5, 6000, 40, 600, 1000];
+function sumOf (){
+    sum = 0;
+    for (let i = 0; i < arrys.length; i++){
+        sum = sum + arrys[i];
+    }
+    // console.log(`sum of [1, 2, 3, 4, 5, 6] is:  ${sum}`);
+}
+sumOf();
+
+//using reduce function
+let sumOfArr = arrys.reduce ((acc, curr) => 
+acc = acc + curr);
+// console.log(sumOfArr);
+
+// find greater number using reduce
+let findMax = arrys.reduce((acc, curr) => {
+if ( acc > curr){
+    return acc;
+}
+else{
+    return curr;
+}
+});
+console.log(findMax);
+
+
+
