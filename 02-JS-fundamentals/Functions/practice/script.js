@@ -33,5 +33,21 @@ let joinIt = join.join('');
 
 const arry = [1, 2, 3, 4, 5, 6];
 let newArrys = arry.map((element) => element*2);
-console.log(newArrys)
+// console.log(newArrys)
 
+// return function multi by 2 
+function double(x){
+    return x*2;
+}
+
+// return function multi by 3 
+function triple (x){
+    return x*3;
+}
+
+// return binary function
+function binary(x){
+    return x.toString(2);
+}
+let output = arry.map(binary);
+console.log(output);
