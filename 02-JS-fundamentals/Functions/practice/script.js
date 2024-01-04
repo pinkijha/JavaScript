@@ -50,4 +50,45 @@ function binary(x){
     return x.toString(2);
 }
 let output = arry.map(binary);
-console.log(output);
+// console.log(output);
+
+
+
+//filter aaray function (higher order function)
+
+const arrys = [1, 2, 3, 4, 5, 6];
+ function odd(){
+     for (let i = 0; i<arrys.length; i++){
+        if (i%2 !== 0){
+           console.log(i);           
+        }
+     }
+     console.log(`\n`);
+ }
+
+/*  let outputs = arrys.filter(odd);
+ console.log(outputs); */
+
+ // simple way
+ function isOdd(x){
+    return x % 2;
+ }
+ /* let outputs = arrys.filter(isOdd);
+ console.log(outputs); */
+
+ // another example
+ function isEven(x){
+    return x % 2 === 0;
+ }
+ /* let outputs = arrys.filter(isEven);
+ console.log(outputs); */
+
+ // another example number greater
+let  outputs = arrys.filter((x) => x > 3);
+console.log(outputs);
+
+/*  function isGreater(x){
+    return x > 4;
+ }
+ let outputs = arrys.filter(isGreater);
+ console.log(outputs); */
