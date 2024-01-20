@@ -70,4 +70,6 @@ const user = [
     result = array.find( v => v > 15);
     // console.log(result);
 
-    
+    array.forEach((n,i,array) => {
+        console.log(n,i,array);
+    })
