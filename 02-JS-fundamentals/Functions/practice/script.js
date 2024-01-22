@@ -124,4 +124,30 @@ else{
 console.log(findMax);
 
 
+'use strict';
+result = "1" == 1;
+// console.log(result);
 
+let value = new Set([1, 1, 2, 3, 2, 3]);
+result = [...value];
+// console.log(result);
+
+const getA = () => 1;
+const getB = () => 2;
+const getC = () => 3;
+result = (getA(), getB(), getC());
+// console.log(result);
+
+const array =[ 10, 15, 20, 30, 40, 50];
+result = array.find( v => v > 15);
+// console.log(result);
+
+array.forEach((n,i,array) => {
+    // console.log(n,i,array);
+})
+
+let arr1 = array.slice(2,5);
+let str = "      pinki    jha    ";
+console.log(str);
+arr = str.trim();
+console.log(arr); 

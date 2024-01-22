@@ -23,7 +23,7 @@ const user = [
     // console.log(sameAge);
 
 
-    // find the name whose age is less than 30
+    // find the name whose age is less than 30 (chaining)
     let output = user.filter(x => x.age < 30).map(x => x.firstName);
     // console.log(output);
 
@@ -52,24 +52,33 @@ const user = [
     result = plus === minus;
     // console.log(result);
 
-    'use strict';
-    result = "1" == 1;
-    // console.log(result);
+  // map array function
 
-    let value = new Set([1, 1, 2, 3, 2, 3]);
-    result = [...value];
-    // console.log(result);
+  let arr1 = ['pinki', 'shailesh', 'jha', 'thakur', 'shailesh thakur'];
+  arr1 = [{name: 'pinki', surname: 'jha', profession: 'not working'},
+  {name: 'shailesh', surname: 'thakur', profession: 'working'},
+  {name: 'teju', surname: 'tambe', profession: 'working'},
+  {name: 'swati', surname: 'kadam', profession: 'working'}];
 
-    const getA = () => 1;
-    const getB = () => 2;
-    const getC = () => 3;
-    result = (getA(), getB(), getC());
-    // console.log(result);
+  arr1 = [{productName: 'shop', brand: 'lux', price: 40.00, stock: 'In Stock'},
+  {productName: 'heels', brand: 'paragone', price: 600.00, stock: 'out of Stock'},
+  {productName: 't-shirt', brand: 'puma', price: 500.00, stock: 'In Stock'},
+  {productName: 'watch', brand: 'noise', price: 2490.00, stock: 'out of Stock'},
+  {productName: 'perfume', brand: 'lbelavita', price: 1410.00, stock: 'In Stock'}]
+//  let arr = arr1.map( val => {
+//     console.log(val);
+   
+//  })
+//  console.log(`\n`);
+//  console.log(arr1[0]);
 
-    const array =[ 10, 15, 20, 30, 40];
-    result = array.find( v => v > 15);
-    // console.log(result);
+//filter
+/* let new_arr = arr1.filter(item => item.profession === 'working');
+console.log(new_arr); */
 
-    array.forEach((n,i,array) => {
-        console.log(n,i,array);
-    })
+// filter @ reduce
+new_arr = arr1
+.filter(item =>  item.price < 1000 && item.stock === 'In Stock')
+.reduce((acc, item) => acc + item.price , 0);
+console.log(`total price:  ${new_arr}`);
+

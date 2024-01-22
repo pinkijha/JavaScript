@@ -174,4 +174,21 @@ const result = [1, 2, 3].some(check);
 console.log(result); */
 
 
+// pattern
+/* Input: 4
+Output:        * * * *
+               * * * * 
+               * * * * 
+               * * * *  */
+
+
+for (let i = 1; i <= 4; i++){
+    let line = ""; 
+    for ( let j = i; j <= i; j++){       
+        line += "*  "; 
+    }
+    // console.log(line); 
+
+}
+
 
