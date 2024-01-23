@@ -40,11 +40,29 @@ const inputString = "RINKU JHA";
     we are give array of marks of students . filter our of the marks of students that scored 90 */
 
 let studentScore = [{ name: 'pinki', surname: 'jha', marks: 99 },
-                    { name: 'shailesh', surname: 'thakur', marks: 89 },
-                    { name: 'swati', surname: 'kadam', marks: 79 },
-                    { name: 'santoshi', surname: 'jha', marks: 98 },
-                    { name: 'sakshi', surname: 'jha', marks: 93 },
+{ name: 'shailesh', surname: 'thakur', marks: 89 },
+{ name: 'swati', surname: 'kadam', marks: 79 },
+{ name: 'santoshi', surname: 'jha', marks: 98 },
+{ name: 'sakshi', surname: 'jha', marks: 93 },
 ];
 
-let newScore = studentScore.filter( item => item.marks > 90);
-console.log(newScore);
+let newScore = studentScore.filter(item => item.marks > 90);
+// console.log(newScore);
+
+
+/*  practice questions 
+    take a number n as input from user . create an array of numbers from 1 to n.
+    use the reduce method to calculate the sum of all numbers in the array
+    use the reduce method to calculate the product of all numbers in the array */
+
+let n = prompt('enter number')
+let arr = [];
+for (let i = 1; i <= n; i++) {
+    arr[i - 1] = i;
+   
+}
+console.log(arr);
+let sum = arr.reduce((accu, curr) => { return accu + curr });
+let product = arr.reduce((accu, curr) => { return accu * curr });
+
+console.log(`sum of array is : ${sum} && product of array is : ${product}`);
