@@ -1,0 +1,16 @@
+body{
+    background-color: bisque;
+}
+h2{
+    color: green;
+}
+
+.box{
+    background-color: aqua;
+    color: blue;
+    height: 100px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 50px;
+    padding:8px;
+}
