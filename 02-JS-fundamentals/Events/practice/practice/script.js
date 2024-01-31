@@ -14,35 +14,33 @@ modebtn.addEventListener("click", () => {
 
 }) */
 
+
+
+
 // light on|off
-/* 
+
 let light = document.querySelector("#mode");
-let switchs = 'on';
+// let switchs = 'on';
 
 light.addEventListener("click", () => {
 
-    let image = document.createElement("img");
-    // image.innerHTML = "<img src='pic_bulboff.gif'>";
-    image.setAttribute("src", "pic_bulboff.gif")
-    image.appendChild(document.createTextNode(""))
 
+    let image = document.querySelector("#img");
 
-
-    if( switchs === 'on') {
-        // switchs = 'off'
-
-
+    if (image.src.match('bulbon')) {
+        image.src = "pic_bulboff.gif";
+        light.innerHTML = "Switch Off";
     }
-    else{
-        switchs = 'on';
+    else {
+        image.src = "pic_bulbon.gif";       
+        light.innerHTML = "Switch On";
     }
-    console.log(switchs)
-}) */
+})
 
 
 
 
-// click on img for light on and off
+/* // click on img for light on and off
 let image = document.querySelector("#img");
 
 image.addEventListener("click", () =>
@@ -54,9 +52,12 @@ image.addEventListener("click", () =>
     else{
         image.src = "pic_bulbon.gif";
     }
-})
+}) */
 
-//using normal function
+
+
+
+/* //using normal function
 function changeImage(){
     image = document.getElementById('img');
     if (image.src.match('bulbon')){
@@ -66,6 +67,6 @@ function changeImage(){
     else{
         image.src = "pic_bulbon.gif";
     }
-}
+} */
 
 
