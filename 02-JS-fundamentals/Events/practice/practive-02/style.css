@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+li{
+    list-style-type: none;
+}
+img{
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 50px;
+}
