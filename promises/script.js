@@ -4,7 +4,9 @@ const promise = createOrder(cart); //orderId
 promise.then(function(orderId){
     console.log(orderId);
 })
-
+.catch(function(err){
+    console.log(err);
+})
 
 //producer
 function createOrder(cart){
