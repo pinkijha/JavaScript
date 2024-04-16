@@ -11,3 +11,20 @@ const emp2 = {
     }
 };
 emp2.__proto__=emp;
+
+//assignment
+class User{
+
+    constructor(name, email){
+        this.name = name;
+        this.email = email;
+    }
+    viewData(){
+        console.log("data is secrete")
+    }
+
+}
+
+let student = new User("pinki", "pinki@gmail.com");
+let student1 = new User("pinki", "pinki@gmail.com");
+let student2 = new User("pinki", "pinki@gmail.com");
