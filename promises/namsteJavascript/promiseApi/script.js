@@ -1,6 +1,7 @@
 const p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("p1 Success");
+        // resolve("p1 Success");
+        reject("p1 Fail");
     }, 3000);
 });
 
@@ -8,16 +9,27 @@ const p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
         // resolve("p2 Success");
         reject("p2 Fail");
-    }, 3000);
+    }, 2000);
 });
 
 const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("p3 Success");
-    }, 3000);
+        // resolve("p3 Success");
+        reject("p3 Fail");
+    }, 1000);
 });
 
-Promise.all([p1, p2, p3])
+//promise all
+/* Promise.all([p1, p2, p3])
+.then((res) => {
+    console.log(res);
+})
+.catch((err) => {
+    console.error(err);
+}) */
+
+//promise any
+Promise.any([p1, p2, p3])
 .then((res) => {
     console.log(res);
 })
