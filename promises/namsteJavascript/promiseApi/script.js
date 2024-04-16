@@ -29,7 +29,16 @@ const p3 = new Promise((resolve, reject) => {
 }) */
 
 //promise any
-Promise.any([p1, p2, p3])
+/* Promise.any([p1, p2, p3])
+.then((res) => {
+    console.log(res);
+})
+.catch((err) => {
+    console.error(err);
+}) */
+
+//promise allSettled
+Promise.allSettled([p1, p2, p3])
 .then((res) => {
     console.log(res);
 })
