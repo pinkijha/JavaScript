@@ -34,3 +34,13 @@ const student1 = {
     name:"shailesh"
 }
 student.x.call(student1);
+
+// this inside arrow function
+
+const fruits = {
+    name: "aaple",
+    type: () => {
+        console.log(this)
+    }
+}
+fruits.type();
