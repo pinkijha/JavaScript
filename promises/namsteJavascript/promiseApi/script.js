@@ -14,9 +14,9 @@ const p2 = new Promise((resolve, reject) => {
 
 const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("p3 Success");
-        // reject("p3 Fail");
-    }, 10000);
+        // resolve("p3 Success");
+        reject("p3 Fail");
+    }, 1000);
 });
 
 //promise all
