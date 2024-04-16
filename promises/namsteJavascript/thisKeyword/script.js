@@ -19,3 +19,18 @@ const obj = {
     }
 }
 obj.x();
+
+// call apply bind method (sharing method)
+
+const student = {
+    name:"pinki",
+    x: function(){
+        console.log(this.name);
+    }
+}
+student.x();
+
+const student1 = {
+    name:"shailesh"
+}
+student.x.call(student1);
