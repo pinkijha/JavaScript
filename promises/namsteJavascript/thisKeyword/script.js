@@ -1,4 +1,4 @@
-
+"use strict";
 //this in global space
 console.log(this);
 
@@ -6,4 +6,6 @@ console.log(this);
 function x(){
     console.log(this);
 }
-x();
+
+//this in strict mode - (this substitution)
+window.x();
