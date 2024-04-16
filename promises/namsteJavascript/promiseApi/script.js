@@ -38,7 +38,16 @@ const p3 = new Promise((resolve, reject) => {
 }) */
 
 //promise allSettled
-Promise.allSettled([p1, p2, p3])
+/* Promise.allSettled([p1, p2, p3])
+.then((res) => {
+    console.log(res);
+})
+.catch((err) => {
+    console.error(err);
+}) */
+
+// promise race
+Promise.race([p1, p2, p3])
 .then((res) => {
     console.log(res);
 })
