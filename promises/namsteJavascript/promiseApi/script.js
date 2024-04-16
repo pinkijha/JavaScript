@@ -1,22 +1,22 @@
 const p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        // resolve("p1 Success");
-        reject("p1 Fail");
+        resolve("p1 Success");
+        // reject("p1 Fail");
     }, 3000);
 });
 
 const p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        // resolve("p2 Success");
-        reject("p2 Fail");
+        resolve("p2 Success");
+        // reject("p2 Fail");
     }, 2000);
 });
 
 const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        // resolve("p3 Success");
-        reject("p3 Fail");
-    }, 1000);
+        resolve("p3 Success");
+        // reject("p3 Fail");
+    }, 10000);
 });
 
 //promise all
