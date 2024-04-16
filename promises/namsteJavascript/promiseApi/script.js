@@ -6,7 +6,8 @@ const p1 = new Promise((resolve, reject) => {
 
 const p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve("p2 Success");
+        // resolve("p2 Success");
+        reject("p2 Fail");
     }, 3000);
 });
 
@@ -21,5 +22,5 @@ Promise.all([p1, p2, p3])
     console.log(res);
 })
 .catch((err) => {
-    console.log(err);
+    console.error(err);
 })
